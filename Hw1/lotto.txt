@@ -4,7 +4,7 @@
 
 FILE* lotto;
 int num[6] = {0};
-void lottory(){
+void lottery(){
     int arr,c,n=0;
     for(int i=1;i<6;i++){
         num[i]=0;
@@ -22,6 +22,16 @@ void lottory(){
             n++;
         }
     }
+        int q = 0, w = 0 ,temp = 0;
+    	for( q = 0; q < 5; q++) {
+        	for( w = q; w < 5; w++) {
+            	if( num[w] < num[q] ) {
+                temp = num[w];
+                num[w] = num[q];
+                num[q] = temp;
+            }
+        }
+    }
     num[5] = rand()%10+1;
     for(int i=0;i<6;i++){
         fprintf(lotto,"%02d ",num[i]);
@@ -36,7 +46,7 @@ int main(){
     fprintf(lotto,"======== lotto649 ========\n%s",ctime(&curtime));
     for(int i=0;i<n;i++){
         fprintf(lotto,"[%d] : ",i+1);
-        lottory();
+        lottery();
 		fprintf(lotto,"\n");
     }
 	for (int h=0;h<(5-n);h++){
