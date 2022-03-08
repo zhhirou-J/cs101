@@ -3,16 +3,16 @@
 #include <time.h>
 
 FILE* lotto;
-int num[6] = {0};
+int num[7] = {0};
 void lottery(){
     int arr,c,n=0;
-    for(int i=1;i<6;i++){
+    for(int i=1;i<=6;i++){
         num[i]=0;
     }
-    while(n < 5){
+    while(n < 6){
         arr=rand()%69+1;
         c = 0;
-        for(int i =1;i<=n;i++){
+        for(int i =0;i<=n;i++){
             if(num[i] == arr){
                 c = 1;
             }
@@ -23,8 +23,8 @@ void lottery(){
         }
     }
         int q = 0, w = 0 ,temp = 0;
-    	for( q = 0; q < 5; q++) {
-        	for( w = q; w < 5; w++) {
+    	for( q = 0; q < 6; q++) {
+        	for( w = q; w < 6; w++) {
             	if( num[w] < num[q] ) {
                 temp = num[w];
                 num[w] = num[q];
@@ -32,8 +32,8 @@ void lottery(){
             }
         }
     }
-    num[5] = rand()%10+1;
-    for(int i=0;i<6;i++){
+    num[6] = rand()%10+1;
+    for(int i=0;i<=6;i++){
         fprintf(lotto,"%02d ",num[i]);
     }
 }
@@ -49,9 +49,9 @@ int main(){
         lottery();
 		fprintf(lotto,"\n");
     }
-	for (int h=0;h<(5-n);h++){
+	for (int h=0;h<(6-n);h++){
         fprintf(lotto,"[%d] : ",n+h+1);
-        for(int j=0;j<6;j++){
+        for(int j=0;j<=6;j++){
         	fprintf(lotto,"-- ");
         }fprintf(lotto,"\n");
     }
