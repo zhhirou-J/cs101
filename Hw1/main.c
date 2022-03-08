@@ -39,7 +39,9 @@ void lottery(){
 }
 int main(){
 	lotto=fopen("lotto.txt","w+");
-    int n=2;
+    int n;
+    printf("How many lottery would you want to purchase?\n");
+    scanf("%d",&n);
     srand((unsigned) time(NULL));
     time_t curtime;
     time(&curtime);
