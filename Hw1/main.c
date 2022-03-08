@@ -51,7 +51,7 @@ int main(){
         lottery();
 		fprintf(lotto,"\n");
     }
-	for (int h=0;h<(6-n);h++){
+	for (int h=0;h<(5-n);h++){
         fprintf(lotto,"[%d] : ",n+h+1);
         for(int j=0;j<=6;j++){
         	fprintf(lotto,"-- ");
