@@ -24,7 +24,7 @@ int get_rad_num(int lotto_array[7]) {
         } else if (j = 6) {
             lotto_array[6] = rand_num_mod11(lotto_array[6]);
         }
-        //check lotto array[i] isn't 0;
+        
     }
     return lotto_array[7];
 }
@@ -104,9 +104,9 @@ int main() {
         fprintf(fp, "[%d]: ", i);
         lotto_array[8] = array_rerandom(lotto_array);
         lotto_array[8] = array_swap(lotto_array);
-        print_array(lotto_array, fp); //fprintf3
+        print_array(lotto_array, fp); 
     }
-    print_last(row_num, fp); //fprintf4
+    print_last(row_num, fp);
     fclose(fp);
     return 0;
 }
