@@ -25,7 +25,7 @@ void cutTheTime(){ //cut the time to date&time
 
 int main(){
  
- reportFile = fopen("report.txt", "w+");
+ reportFile = fopen("reportFile.txt", "w+");
  openRecords = fopen("records.bin", "r");
  
  lotto_record_t tmp[256];
