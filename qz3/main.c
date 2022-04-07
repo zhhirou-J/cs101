@@ -38,11 +38,11 @@ int multiplication(int i,int j){
 int main()
 {
     char s[]="1234567890";
+	rec_dec(s);
     printf("func#1-----------------------\n");
-    rec_dec(s);
-    printf("\nfunc#2-----------------------\n");
     hanoi_tower(16);
-    printf("\nfunc#3-----------------------\n");
+    printf("func#2-----------------------\n");
     multiplication(1,1);
+    printf("func#3-----------------------\n");
     return 0;
 }
