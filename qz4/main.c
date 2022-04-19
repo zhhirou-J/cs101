@@ -36,7 +36,7 @@ char* copy_string(char* s) {
 	return cp_str;
 }
 
-int main(void) {
+int main() {
 	int n, m;
 	n = 1;
 	m = 2;
