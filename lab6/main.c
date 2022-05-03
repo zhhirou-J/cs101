@@ -12,7 +12,7 @@ int _mult(int x, int y){
 int _div(int x, int y){
     return x/y;
 }
-int _expon(int x, int y){
+int _power(int x, int y){
     int a = 1;
     while(y!=0){
         a*=x;
@@ -28,7 +28,7 @@ int main()
     ope[1] = _sub;
     ope[2] = _mult;
     ope[3] = _div;
-    ope[4] = _expon;
+    ope[4] = _power;
     printf("Enter two integer:");
     scanf("%d%d", &x, &y);
     
