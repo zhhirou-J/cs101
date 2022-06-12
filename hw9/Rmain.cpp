@@ -49,7 +49,7 @@ class ReplaceMystring {
 		}
 };
 
-int main(void) {
+int main() {
 	ReplaceMystring my;
 	my.replaceString("IU is best", "IU is best is best");
 	return 0;
