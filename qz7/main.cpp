@@ -37,13 +37,11 @@ public:
             }
         }
         cout << count << " class in " << fn << endl << outp;
-
     }
 };
 int main()
 {
     ReadClass rfile;
     rfile.showClass();
-
     return 0;
 }
