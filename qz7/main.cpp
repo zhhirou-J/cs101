@@ -4,7 +4,6 @@
 using namespace std;
 
 class myString {
-
 };
 
 class ReadClass {
@@ -32,7 +31,6 @@ public:
                         outp += pt + "\n";
                         count++;
                     }
-
                 }
             }
         }
